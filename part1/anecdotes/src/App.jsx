@@ -12,6 +12,7 @@ const App = () => {
     'The only way to go fast, is to go well.'
   ]
   const [votes, setVotes] = useState(new Uint16Array(8));
+  
    
   const [selected, setSelected] = useState(0)
 
