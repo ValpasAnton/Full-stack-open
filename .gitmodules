@@ -1,3 +1,0 @@
-[submodule "phonebook-backend"]
-    path = part3/phonebook/backend
-    url = https://github.com/ValpasAnton/phonebook_backend
