@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Filter from './components/Filter.jsx'
 import PersonForm from './components/PersonForm.jsx'
 import Personlist from './components/Personlist.jsx'
-import axios from 'axios'
 import numberService from './services/phonenumbers.js'
 import Notification from './components/Notification.jsx'
 import './index.css'
@@ -57,6 +56,7 @@ const App = () => {
           }, 5000)
         })
         .catch(error => {
+          console.error('Failed to update person:', error)
           setNotification({message: `Information of ${person.name} has already been removed from the server`, type: 'error'})
           setTimeout(() => {
             setNotification({ message: null, type: null })
